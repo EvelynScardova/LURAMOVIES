@@ -1,0 +1,171 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #ffffff;
+    background: #080611;
+    font-family: "Luxurious Roman", serif;
+    margin-bottom: 60px;
+}
+
+/* CABEÇALHO */
+header {
+    background: #100b20;
+    border-bottom: 3px solid #644ea2;
+    padding: 22px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #a58be8;
+    text-align: center;
+    letter-spacing: 3px;
+    box-shadow: 0 4px 15px #644ea233;
+}
+
+/* DESTAQUE PRINCIPAL */
+.chamada {
+    background: linear-gradient(135deg, #21143f, #644ea2);
+    padding: 55px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.chamada-texto {
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+p {
+    font-size: 23px;
+    color: #e5d7ff;
+}
+
+/* VÍDEO PRINCIPAL */
+.video-container {
+    width: 560px;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 0 25px #a58be855;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* CATEGORIAS CENTRALIZADAS */
+.categoriaV,
+.categoriaS {
+    padding: 35px 25px;
+    color: #feee3b;
+    text-align: center;
+}
+
+/* TÍTULOS */
+.categoriaV h2,
+.categoriaS h2 {
+    font-size: 29px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #feee3b;
+}
+
+/* CAPAS CENTRALIZADAS */
+.categoria-videos,
+.categoria-series {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    padding: 10px 5px 20px;
+}
+
+/* IMAGENS */
+.categoria-videos img,
+.categoria-series img {
+    height: 150px;
+    width: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    opacity: 0.75;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/* EFEITO NAS CAPAS */
+.categoria-videos img:hover,
+.categoria-series img:hover {
+    opacity: 1;
+    transform: scale(1.06);
+    border: 2px solid #a58be8;
+    box-shadow: 0 0 18px #a58be888;
+}
+
+/* RODAPÉ */
+footer {
+    background: #100b20;
+    border-top: 2px solid #644ea2;
+    text-align: center;
+    padding: 25px;
+    color: #a58be8;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* CELULAR */
+@media (max-width: 768px) {
+
+    header {
+        font-size: 26px;
+    }
+
+    .chamada {
+        padding: 35px 20px;
+        text-align: center;
+        gap: 25px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .chamada-texto {
+        margin-right: 0;
+    }
+
+    .categoria-videos img,
+    .categoria-series img {
+        width: 190px;
+        height: 120px;
+    }
+
+    .categoriaV,
+    .categoriaS {
+        padding: 25px 15px;
+    }
+
+    .categoria-videos,
+    .categoria-series {
+        gap: 15px;
+    }
+}
